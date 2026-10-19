@@ -6,9 +6,9 @@ Obiectiv: voce AI **nativ românească** (femeie + bărbat), calitate „LUNAI",
 
 ## Faza 0 — Pregătire (30 min)
 1. ✅ OpenUtau Lunai 0.2.1.0 instalat
-2. Instalează **vLabeler** (etichetare: https://github.com/enovella-ru/releases sau căutare „vLabeler DiffSinger")
+2. ✅ Instalează **vLabeler** (etichetare: https://github.com/sdercolin/vlabeler/releases → `vlabeler-*-win64.zip`, extrage într-un folder permanent)
 3. Testează MIDI: `File → Import MIDI` cu o piesă mică
-4. Verifică GPU: `nvidia-smi` în CMD (1660 SUPER 6GB — da, e suportat: CUDA + DirectML)
+4. ✅ Verifică GPU: `nvidia-smi` → **Driver 560.94, CUDA 12.6, 6144 MiB** — suportat (CUDA + DirectML)
 
 ## Faza 1 — Material (30–60 min de cântat) ★ inima proiectului
 **Ce cântă:** `RECLIST-RO.md` (142 note) + `CANTEC-RECLIST.md` (cântecul cu ele)
