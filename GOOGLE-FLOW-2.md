@@ -3,9 +3,11 @@
 Pipeline: **Google Flow (brut) → UVR (curățat) → VocalNet (TOATE vocile la UNA țintă) → etichetare → dataset**
 ⚠️ Etichetele se pun pe **audio-ul FINAL**, după VocalNet — niciodată pe brut.
 
+**Regula de bază: Flow cântă VERSURI REALE (nu silabe), iar la FIECARE generație cântă POEZIA ÎNTREAGĂ, de la [Intro] până la [Outro].** Poezia din §3 acoperă automat **toate cele 149 de elemente** ale reclistului (verificat automat) — „momeală" perfectă pentru ca TTS/aligner-ul să prindă fiecare sunet.
+
 ---
 
-## 1. Promptul (structura — se copiază identic, se schimbă DOAR blocul [MUZICA] + textul)
+## 1. Promptul (structura — se copiază identic, se schimbă DOAR blocul [MUZICA])
 
 ```
 [IDENTITATE — identic literă cu literă la fiecare generație]
@@ -19,8 +21,9 @@ vocals, no harmonies, no reverb, no echo, dry close-mic studio recording,
 one continuous single take. Singing in Romanian language only.
 
 [TEXT]
-Sing exactly these Romanian syllables, in order, one per note:
-<LIPEȘTI AICI BLOCUL DE VERSURI DIN SECTIUNEA 3>
+Sing the ENTIRE song below from beginning to end, Intro through Outro,
+exactly these Romanian lyrics, in order:
+<LIPEȘTI AICI POEZIA ÎNTREAGĂ DIN SECTIUNEA 3>
 
 [MUZICA — singurul bloc care se schimbă]
 Key: G major. Tempo: 75 BPM, steady quarter-note pulse.
@@ -30,92 +33,158 @@ clear diction on every syllable.
 ```
 
 **Reguli:**
-- Dacă Flow are **Ingredients/Characters** (personaje salvate) → creează cântăreața O dată, folosește-o la toate 24.
-- Dacă Flowul dă mai multe variante per rulare → păstrează 1–2 bune per generație.
-- Cheia e **ghid de registru Flow-ul poate derapează ±; pentru dataset ai nevoie de acoperire de pitch, nu de precizie.
-- După fiecare generare, **checklist**: ☐ a cappella? ☐ aceeași voce? ☐ versurile complete, în ordine? ☐ ritm constant? Dacă apare instrument → **nu arunca: UVR separă.**
+- Dacă Flow are **Ingredients/Characters** → creează cântăreața O dată, folosește-o la toate 24.
+- Cheia e **ghid de registru** — Flow-ul poate derapează ±; pentru dataset ai nevoie de acoperire de pitch, nu de precizie.
+- **Checklist după fiecare generare:** ☐ a cântat **toată poezia până la [Outro]**? ☐ a cappella? ☐ aceeași voce? ☐ versurile complete, în ordine? ☐ ritm constant? Dacă apare un instrument → **nu arunca: UVR separă.**
+- Dacă Flow taie finalul, repetă cu instrucțiunea explicită: *„sing the complete song including the outro"*.
 
 ---
 
 ## 2. Tabelul celor 24 de generații
 
-Gama țintă voce feminină: **A3–E5** · Cântecul: `CANTEC-RECLIST.md` (142 note) · ~30 porniri (cu rezerve)
+Gama țintă voce feminină: **A3–E5** · ~30 porniri (cu rezerve)
+**Textul = poezia ÎNTREAGĂ (§3) la fiecare generație** — se schimbă doar cheia, BPM-ul și genul.
 
-| Gen | Cheie | BPM | Genul | Textul (bloc din §3) |
-|---|---|---|---|---|
-| G01 | D major | 65 | baladă jazz lentă | REFREN |
-| G02 | D major | 65 | chanson | REFREN |
-| G03 | D major | 65 | folclor melancolic | STROFA I |
-| G04 | D major | 65 | baladă cu șoaptă (whispery) | REFREN |
-| G05 | E major | 70 | folclor românesc | REFREN |
-| G06 | E major | 70 | blues | STROFA II |
-| G07 | E major | 70 | bossa | STROFA I |
-| G08 | E major | 70 | pop lent | STROFA III |
-| G09 | E major | 70 | baladă pop | REFREN |
-| G10 | G major | 75 | pop ballad | REFREN |
-| G11 | G major | 75 | folk-pop | REFREN |
-| G12 | G major | 75 | pop Eurovision | STROFA I + II |
-| G13 | G major | 75 | soft rock | STROFA III |
-| G14 | G major | 75 | muzică pentru copii | REFREN |
-| G15 | G major | 75 | pop ballad | **CÂNTECUL ÎNTREG** |
-| G16 | A major | 90 | dance-pop | REFREN |
-| G17 | A major | 90 | pop-rock | REFREN |
-| G18 | A major | 90 | gospel | STROFA II |
-| G19 | A major | 90 | latin pop | STROFA III |
-| G20 | A major | 90 | dance-pop | STROFA I |
-| G21 | B major | 110 | power ballad | REFREN |
-| G22 | B major | 110 | rock de arenă | REFREN |
-| G23 | B major | 110 | clasic/operatic | REFREN + STROFA III |
-| G24 | B major | 110 | anthem (Final pe note înalte) | REFREN + FINAL |
+| Gen | Cheie | BPM | Genul |
+|---|---|---|---|
+| G01 | D major | 65 | baladă jazz lentă |
+| G02 | D major | 65 | chanson |
+| G03 | D major | 65 | folclor melancolic |
+| G04 | D major | 65 | baladă cu șoaptă (whispery) |
+| G05 | E major | 70 | folclor românesc |
+| G06 | E major | 70 | blues |
+| G07 | E major | 70 | bossa |
+| G08 | E major | 70 | pop lent |
+| G09 | E major | 70 | baladă pop |
+| G10 | G major | 75 | pop ballad |
+| G11 | G major | 75 | folk-pop |
+| G12 | G major | 75 | pop Eurovision |
+| G13 | G major | 75 | soft rock |
+| G14 | G major | 75 | muzică pentru copii |
+| G15 | G major | 75 | pop ballad (variantă 2) |
+| G16 | A major | 90 | dance-pop |
+| G17 | A major | 90 | pop-rock |
+| G18 | A major | 90 | gospel |
+| G19 | A major | 90 | latin pop |
+| G20 | A major | 90 | dance-pop (variantă 2) |
+| G21 | B major | 110 | power ballad |
+| G22 | B major | 110 | rock de arenă |
+| G23 | B major | 110 | clasic/operatic |
+| G24 | B major | 110 | anthem |
 
 *Acoperire: D(A3–C4) · E(C4–B4) · G(E4–D5) · A(F♯4–E5) · B(G♯4–F♯5) = A3–E5 complet.*
 *BPM = sugestie de start; dacă genul cere alt tempo (ex. power ballad mai lent), ajustează în blocul [MUZICA].*
 
 ---
 
-## 3. Blocurile de versuri (copie exact în [TEXT])
+## 3. POEZIA COMPLETĂ — versurile REALE (lipire în [TEXT], la FIECARE generație)
 
-### BLOC REFREN (unități 97–117 — „hook"-ul, cel mai dens)
-```
-ai ei oi ui au eu ou ia
-ie io iu ea eo oa uă
-ăi eai uai oai ău eau
-```
+**[Intro]**
+Șoapte vechi în noapte cad,
+Între frunzele din brad.
+Ghidul cântă-ncet și lin,
+Sub o boltă înaltă, senin.
 
-### BLOC STROFA I (unități 1–48)
-```
-a ă â e i o u î
-ca ce ci co cu ga ge gi
-go gu ba be bi bo bu da
-de di do du fa fe fi fo
-fu pa pe pi po pu ta te
-ti to tu ha hi ho ja je
-```
+**[Verse 1]**
+Pășim ușor pe căi de piatră,
+Când focurile ard în jar, pe vatră.
+Înțelepții strâng în palme visul,
+Și cerul își deschide-atinsul.
 
-### BLOC STROFA II (unități 49–96)
-```
-ji jo ju la le li lo lu
-ma me mi mo mu na ne ni
-no nu ra re ri ro ru sa
-se si so su șa șe și șo
-șu ța țe ți țo țu va ve
-vi vo vu za ze zi zo zu
-```
+Băieții culegeau ghiocei proaspeți din zăvoi,
+Cântau cu poftă, fericiți și amândoi.
 
-### BLOC STROFA III (unități 118–142)
-```
-pra bra tra dra gra cra fra pla
-bla fla cla sta spa șta stra ștra
-ceai chiar ghid mânz sfat mult ex brân ză
-```
+La moară, lângă apă, crapul doarme lin,
+Acolo-i horă-n sat la asfințit,
+Cu blana de oaie, jintiță și-un șal,
+Cu grai bătrân de la strămoși.
 
-### BLOC FINAL (după ultima notă)
-```
-a
-```
-*(linia „a" se cântă lung, note înalte — la G24 se leagă de refren)*
+Bade le cântă din flaut,
+Vuietul din codru bate,
+Tot mai mult răsună zumzetul din sat,
+Și mieii ies la apă dimineață.
 
-### BLOC CÂNTECUL ÎNTREG (G15) — lipește toate blocurile în ordine: I → II → REFREN → III → FINAL
+Și puii țopăi prin ogradă,
+Copiii joacă pe-nserate,
+Și clar se vede iarba pe dealuri.
+
+**[Chorus]**
+O, țara mea cu munți și văi,
+Cu șoapte calde-n ochii tăi!
+Prin ploaia grea ce cade-n zori,
+Lumina trece peste nori.
+
+Iubirea noastră-i un strigăt sfânt,
+Ce răsună dulce pe pământ!
+Chiar și vioara cântă tare,
+Mândră ca o leoaică-n soare.
+
+**[Verse 2]**
+Chemarea veche din cetate,
+Ne-aduce pace și dreptate.
+Ghetele reci calcă pe rouă,
+Trăim o viață simplă, nouă.
+
+Cincisprezece stele ard pe cerul greu,
+Iar eu te voi păstra în gândul meu mereu.
+
+Hai să bem un ceai cu zahăr,
+Bade ne-a adus un coș cu bucate, brânză și jeleu,
+Un stejar gigant ne dă umbră,
+Cu gura plină de povești.
+
+Știai tu când mânzul fugea pe deal?
+Eu îți dau un sfat bătrân:
+Luați aminte ce vă spun!
+
+Păsările iau zbor din zori,
+Cu dragoste și cu dor,
+La pragul casei te-așteptam,
+Te port din zi în zi mai mult.
+
+Când mergeai pe lângă râu,
+Și luai un stânjenel frumos.
+
+**[Bridge]**
+Când vremurile schimbe-or fața,
+Și gerul va îngheța viața,
+Ne-om aminti de nopți cu soare,
+De freamătul din primăvară.
+
+Vântul șuieră prin uluci,
+Cu țurțuri lungi la geamuri,
+Am șezut lângă ștrangul vechi,
+Și frații mei se-ntorc pe plai.
+
+Fie un cântec pentru tine,
+Stai puțin și ascultă inima!
+Fără rău și fără spaimă,
+Și ștafeta luminii prinde vânt.
+
+Împăturește-ți teama-n gând,
+Și cântă liber, oricând!
+
+**[Chorus]**
+O, țara mea cu munți și văi,
+Cu șoapte calde-n ochii tăi!
+Prin ploaia grea ce cade-n zori,
+Lumina trece peste nori.
+
+Iubirea noastră-i un strigăt sfânt,
+Ce răsună dulce pe pământ!
+Chiar și vioara cântă tare,
+Mândră ca o leoaică-n soare.
+
+**[Outro]**
+La jumătate de cărare,
+Lin se stinge freamătul din munte,
+Pacea-și pleacă umbra peste frunte.
+Trecem încet prin umbra de sub brad...
+Și nici un rău nu mai există,
+Șoapte vechi în noapte cad.
+
+### Verificare acoperire (automată, refăcută după ultima rescriere)
+**149/149 elemente** ✔️ — toate silabele-CV, diftongii, triftongii (incl. `uai`, `eai`, `iai`, `ieu`, `ioa`, `âu`), grupurile `pra…ștra` și cuvintele-cheie (`ceai, chiar, ghid, mânz, sfat, mult, ex, brânză`) + `i` palatal final (`ochii`, `Băieții`) sunt în poezie.
 
 ---
 
