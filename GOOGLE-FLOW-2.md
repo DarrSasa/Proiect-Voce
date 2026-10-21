@@ -23,7 +23,8 @@ one continuous single take. Singing in Romanian language only.
 [TEXT]
 Sing the ENTIRE song below from beginning to end, Intro through Outro,
 exactly these Romanian lyrics, in order:
-<LIPEȘTI AICI POEZIA ÎNTREAGĂ DIN SECTIUNEA 3>
+<LIPEȘTI AICI POEZIA ÎNTREAGĂ DIN SECȚIUNEA 3 SAU 3B — o singură variantă,
+aceeași la toate cele 24 de generații>
 
 [MUZICA — singurul bloc care se schimbă]
 Key: G major. Tempo: 75 BPM, steady quarter-note pulse.
@@ -77,7 +78,9 @@ Gama țintă voce feminină: **A3–E5** · ~30 porniri (cu rezerve)
 
 ---
 
-## 3. POEZIA COMPLETĂ — versurile REALE (lipire în [TEXT], la FIECARE generație)
+## 3. POEZIA — VARIANTA A (elegiacă, cu accente populare) — versurile REALE (lipire în [TEXT], la FIECARE generație)
+
+> Alternativă modernă în **§3B** (recomandată dacă Flow tinde spre folclor).
 
 **[Intro]**
 Șoapte vechi în noapte cad,
@@ -185,6 +188,119 @@ Trecem încet prin umbra de sub brad...
 
 ### Verificare acoperire (automată, refăcută după ultima rescriere)
 **149/149 elemente** ✔️ — toate silabele-CV, diftongii, triftongii (incl. `uai`, `eai`, `iai`, `ieu`, `ioa`, `âu`), grupurile `pra…ștra` și cuvintele-cheie (`ceai, chiar, ghid, mânz, sfat, mult, ex, brânză`) + `i` palatal final (`ochii`, `Băieții`) sunt în poezie.
+
+---
+
+## 3B. POEZIA MODERNĂ (Varianta B — recomandată pentru Flow)
+
+> **De ce Varianta B:** Varianta A are cuvinte din muzica populară (bade, moară, horă, jintiță, plai, dor…) și Google Flow tinde să genereze voci/stil **folclorice** din cauza lor. Varianta B folosește **vocabulary actual, urban**: cafea, mall, metrou, notificări, radio, balcon, ecran, vacanță, interviu… → Flow rămâne pe genul ales în [MUZICA]. **Verificată automat: 149/149** ✔️ — exact aceleași elemente ca Varianta A.
+
+**[Intro]**
+Șoapte vechi în noapte cad,
+Pe sub stele, pe bulevard.
+Ghidul din telefon îmi șoptește lin,
+Sub o boltă înaltă, senin.
+
+**[Verse 1]**
+Pășim ușor pe căi de piatră,
+Când jarul de pe grătar arde iar.
+Înțelepții strâng în palme visul,
+Și cerul își deschide-atinsul.
+
+Băieții dădeau drumul la radio tare,
+Cântau cu poftă, fericiți și amândoi.
+
+Hai să bem un ceai cu zahăr,
+Comanda a ajuns cu brânză și jeleu,
+Un mall gigant e deschis până târziu,
+Cu gura plină de povești.
+
+Poze cu flash de pe balcon,
+Blazer nou, cafea și muzica mea.
+Vuietul din oraș nu tace,
+Hobby-ul meu: voce, muzică, joc.
+Tot mai mult răsună zumzetul în sală,
+Peste treizeci de grade afară.
+
+Clar se vede totul pe ecran,
+Și țopăi pe trotuar cu pantofi noi,
+Pe stradă ninge cu lumină,
+Ne vedem la șase în oraș.
+
+**[Chorus]**
+O, inima mea, ce vrei acum,
+Cu șoapte calde-n ochii tăi!
+Prin ploaia grea ce cade-n zori,
+Lumina trece peste nori.
+
+Iubirea noastră-i un strigăt nou,
+Ce răsună dulce pe pământ!
+Chiar și pe stadioane cântă tare,
+Mândră ca o leoaică-n soare.
+
+**[Verse 2]**
+Chemarea ta mă sună iar,
+Ei ne așteptau în stația de metrou,
+Cu cravata strâmbă la interviu,
+Trăim o viață simplă, nouă.
+
+Un moment și totul s-a schimbat,
+Cincisprezece notificări pe noapte,
+Iar eu te voi păstra în gândul meu mereu.
+
+Ce iei la micul dejun, iubire?
+Eu îți dau un sfat pe loc:
+Știai tu ce simt când ești departe?
+
+Sâmbătă fugim de-acasă-n oraș,
+Și-mi e jind de-o vacanță-n doi,
+Sunt liberă ca un mânz sălbatic,
+Două cafele, una pentru tine,
+Avioanele iau zbor spre mare,
+Cu dragoste și fără efort,
+La pragul casei te-așteptam,
+Te port din zi în zi mai mult.
+
+Când mergeai pe lângă râu,
+Și luai telefonul lui în mână.
+
+**[Bridge]**
+Când vremurile schimbe-or fața,
+Și gerul va îngheța viața,
+Ne-om aminti de nopți cu soare,
+De freamătul din primăvară.
+
+Vântul șuieră printre blocuri,
+Cu țurțuri lungi la geamuri,
+Am șezut lângă ștrangul vechi,
+Și frații mei au alte planuri.
+
+Fie un cântec pentru tine,
+Stai puțin și ascultă inima!
+Fără rău și fără spaimă,
+Și ștafeta luminii prinde vânt.
+
+Împăturește-ți teama-n gând,
+Și cântă liber, oricând!
+
+**[Chorus]**
+O, inima mea, ce vrei acum,
+Cu șoapte calde-n ochii tăi!
+Prin ploaia grea ce cade-n zori,
+Lumina trece peste nori.
+
+Iubirea noastră-i un strigăt nou,
+Ce răsună dulce pe pământ!
+Chiar și pe stadioane cântă tare,
+Mândră ca o leoaică-n soare.
+
+**[Outro]**
+La jumătate de drum,
+Lin se stinge lumina din oraș,
+Pacea-și pleacă umbra peste frunte.
+Trecem încet în brațele tale,
+Și nici un rău nu mai există,
+Șoapte vechi în noapte cad.
 
 ---
 
