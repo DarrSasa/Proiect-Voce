@@ -211,12 +211,12 @@ Băieții dădeau radioul, cântau iar.
 Hai să bem ceai cu zahăr și cafea,
 Cu sacou, blană și muzica mea.
 A venit comanda: brânză și jeleu,
-Cu gura plină de povești mereu.
+Cu gura plină: hop, povești mereu.
 Tot mai mult răsună-n sală, tare,
 Peste treizeci de grade, ce soare!
 Plăcerea mea: voce, muzică și joc,
 Poze cu bliț pe balcon — ce noroc!
-Un magazin nou se deschide diseară,
+Un magazin se deschide diseară,
 Și bem o cafea pe afară.
 Clar am aflat: pisica e pe la noi.
 La șase, în oraș, prieteni noi.
@@ -265,7 +265,7 @@ De nopți cu soare și de afară.
 Vântul șuieră printre blocuri,
 Și frații mei au alte planuri.
 Am șezut lângă ștrangul vechi,
-Cu țurțuri reci, iarna în urechi.
+Țurțuri reci, iarna în urechi.
 Fie un cântec pentru tine,
 Stai un pic și prinde-l bine.
 Și ștafeta luminii prinde vânt,
