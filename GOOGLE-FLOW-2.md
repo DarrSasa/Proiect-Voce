@@ -209,16 +209,16 @@ Sub boltă înaltă e cerul senin.
 Vuiet, foc, pui și jar pe grătar,
 Băieții dădeau radioul, cântau iar.
 Hai să bem ceai cu zahăr și cafea,
-Cu blazer nou și muzica mea.
+Cu sacou, blană și muzica mea.
 A venit comanda: brânză și jeleu,
 Cu gura plină de povești mereu.
 Tot mai mult răsună-n sală, tare,
 Peste treizeci de grade, ce soare!
-Hobby-ul meu: voce, muzică și joc,
-Poze cu flash pe balcon — ce noroc!
-Un mall gigant se deschide diseară,
+Plăcerea mea: voce, muzică și joc,
+Poze cu bliț pe balcon — ce noroc!
+Un magazin nou se deschide diseară,
 Și bem o cafea pe afară.
-Clar se vede: pisica pe la noi.
+Clar am aflat: pisica e pe la noi.
 La șase, în oraș, prieteni noi.
 Și țopăi prin stradă pe trotuar,
 La șase fix, pe stradă, spre mare.
@@ -232,7 +232,7 @@ Prin ploaia grea ce cade-n zori,
 Lumina caldă trece peste nori.
 Iubirea noastră-i un strigăt nou,
 Mai vreau o noapte cu tine, una, două!
-Chiar și pe stadioane cântă tare,
+Chiar și un gigant ar cânta tare,
 Mândră ca o leoaică-n soare.
 
 ### POEZIA 2 — 40 rânduri · [Verse 2] + [Bridge] + [Outro]
